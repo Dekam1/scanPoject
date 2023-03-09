@@ -1,0 +1,19 @@
+.footer {
+    background: #029491;
+    color: #ffffff;
+
+    .footer_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer_text {
+            font-size: 14px;
+
+            .copyright {
+                margin-top: 21px;
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+.card {
+    padding-bottom: 25px;
+    width: 415px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+
+    .card_top {
+        padding: 31px 35px;
+        border-top-right-radius: inherit;
+        border-top-left-radius: inherit;
+        position: relative;
+
+        .card_name {
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+
+    & img {
+        position: absolute;
+    }
+
+    &:nth-child(1) {
+        & img {
+            top: 11px;
+            right: 12px;
+        }
+    }
+
+    &:nth-child(2) {
+        & img {
+            top: -5px;
+            right: 9px;
+        }
+    }
+
+    &:nth-child(3) {
+        & img {
+            top: 22px;
+            right: 3px;
+        }
+    }
+
+    .card_bottom {
+        padding: 35px 0px 0px 33px;
+
+        .bottom_top {
+            position: relative;
+
+            .top_text {
+                margin-bottom: 11px;
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+
+                .discount_price {
+                    margin-right: 22px;
+                    font-size: 30px;
+                }
+
+                .without_discount {
+                    font-size: 25px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                & span {
+                    margin-left: 7px;
+                }
+            }
+
+            .plan {
+                margin-bottom: 37px;
+            }
+        }
+
+        .bottom_middle {
+            font-size: 18px;
+
+            .midlle_text {
+                margin-bottom: 11px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .list {
+                .list_item {
+                    list-style: none;
+                    padding: 2px 28px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1346px) {
+    .card {
+        margin-right: 15px;
+
+        .card_top {
+            padding-left: 24px;
+            padding-right: 0px;
+
+            & span {
+                margin-top: 22px;
+                font-size: 18px;
+                display: inline-block;
+                width: 100%;
+            }
+
+            .card_name {
+                font-size: 20px;
+            }
+        }
+
+        &:nth-child(1) {
+            & img {
+                width: 59px;
+                height: 53px;
+                top: 14px;
+                right: 12px;
+            }
+        }
+
+        &:nth-child(2) {
+            & img {
+                width: 68px;
+                height: 75px;
+                top: 8px;
+                right: 9px;
+            }
+        }
+
+        &:nth-child(3) {
+            & img {
+                width: 73px;
+                height: 60px;
+                top: 14px;
+                right: 14px;
+            }
+        }
+
+        .card_bottom {
+            padding: 14px 14px 0px 14px;
+
+            .bottom_top {
+                position: relative;
+
+                .top_text {
+                    margin-bottom: 11px;
+                }
+
+                .plan {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 1169px) {
+    .card {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 873px) {
+    .card {
+        width: 70%;
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 729px) {
+    .card {
+        width: 95%;
+        margin-right: 0px;
+
+        .card_bottom {
+            .bottom_middle {
+                font-size: 16px;
+
+                .midlle_text {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
